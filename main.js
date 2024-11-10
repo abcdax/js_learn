@@ -55,7 +55,7 @@ console.log(name.charAt(100));// n'affiche aucune valeur
 console.log(name[100]);//undefined
 console.log(name.indexOf('b'));//index d' alphabet
 console.log(name.split());
-console.log(d.split());
+console.log(d.split());   
 
 
 
