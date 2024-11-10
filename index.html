@@ -7,8 +7,31 @@
     <script>document.write('helloo  ')</script>
     <title>Document</title>
 </head>
+<script>
+    function mafonction(){
+        document.getElementById('dm').innerHTML="texte modifie avec une fonction "
+    }
+</script>
 <body>
     <h1>hellooo</h1>
+    <script src="main.js"></script> 
+    <br><br>
+    <h1> modification du contenu avec js </h1>
+    <p id="demo">js peut modifier contenu HTML</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML='bonjour js';">Cliquer !!!</button>
+<br>
+    <h1>modification du style</h1>
+    <p id="dm" >js peut modifier le style d'un element HTML </p>
+    
+       <button type="button" onclick="document.getElementById('dm').style.fontSize='35px';">Modifier</button>
+       <button type="button" onclick="document.getElementById('dm').style.display='none';">Masquer</button> <!--masquer Element html-->
+       <button type="button" onclick="document.getElementById('dm').style.display='block'">Afficher</button>
+       <button type="button" onclick="mafonction()">Modifier_fnctn</button>
+   
+       <br>
+       <h1>varaiable</h1>
+       
+
 </body>   
-<script src="main.js"></script>
+
 </html>
