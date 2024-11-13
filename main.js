@@ -57,6 +57,77 @@ console.log(name.indexOf('b'));//index d' alphabet
 console.log(name.split());
 console.log(d.split());   
 
+let names='I love java script';
+console.log(names.slice());//affiche toute la phrase
+console.log(names.slice(2,6));//affiche d'idex2 jusqu'a 6
+console.log(names.slice(-6));//6 de la fin
+console.log(names.substring());//lameme avecslice mais ne prend pas les valeurs negatives
+
+//les tableaux
+let table=['ahmed','abc','ywzn']
+console.log(table);//afficher le tableau
+console.log(table[0]);//aff 1er element du tableau
+console.log(table.length);//affiche nbrs des elements
+console.log(table.length-1);
+
+let objects=[1,2,3,4,5,[6,7,8]];
+console.log(objects);
+console.log(objects[5][1]);//afficher "7"{tab dans un tab}
+// modification d'un tab
+table[1]="1234";
+console.log(table);
+console.log(table.push('kamal'));//"push"/ajouter element a la fin 
+console.log(table);
+console.log(table.unshift('debut'));//"unsift"/ajouter au debut du tableau
+console.log(table);
+console.log(table.shift());//""shift/supp du debut et stocker
+console.log(table);
+
+console.log(table.pop()); //supp du fin 
+console.log(table);
+
+console.log(table.splice(0,1)); //supprime avec psition
+console.log(table)
+console.log(table.splice(0, 1, "gml", "do")); // supprime et ajoute des éléments(remplacement)//////splice(start,count,add,add,ad..)
+console.log(table)
+
+console.log(table.slice(0,2));//prend une copie!!
+console.log(table);
+let tab=['a','b','c','d','e','a'];
+console.log(tab)
+console.log(tab.indexOf('a')); //index d'un element
+console.log(tab.indexOf('a',4));
+console.log(tab.lastIndexOf('a',-0));
+console.log(tab.includes("d",4))//?contient unn element 
+
+console.log(table)
+console.log(table.reverse());//reverser le tableau
+console.log(table.sort());//classement du tableau
+
+
+////operation sur_tableau////
+let tab1=['ahmad','ali','mzen'];
+let tab2=['kamal','karim','omar'];
+console.log(tab1.concat(tab2));//concatination des 2 tableau
+console.log(tab1.concat(tab2,'mona'));//concatination des 2 tableau + ajout
+console.log(tab1.join()); // d'un tab => string
+console.log(tab1.join('-'));//d'un tab => string separer par "- "
+
+
+/////////////////////comparison/////////////////
+let p="ahmed";
+let t="ali";
+console.log(p==t);//comprerles l'egalites des valeures si vrai ou fausse
+
+let askmail = prompt('Entrez votre email :'); // Boîte de dialogue
+askmail = askmail.toUpperCase().trim();
+let email = "ddd@gmail.com";
+email = email.toUpperCase();
+console.log(askmail == email); // Vérifie si les emails sont identiques (sans distinction de casse)
+
+//.toUpperCase()// to majuscule
+//.toLowerCase()// to minisci=ule
+// .trim(); //supp les espace de debut et fin et non au milieu
 
 
 
