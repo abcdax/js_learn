@@ -119,15 +119,48 @@ let p="ahmed";
 let t="ali";
 console.log(p==t);//comprerles l'egalites des valeures si vrai ou fausse
 
-let askmail = prompt('Entrez votre email :'); // Boîte de dialogue
-askmail = askmail.toUpperCase().trim();
-let email = "ddd@gmail.com";
-email = email.toUpperCase();
-console.log(askmail == email); // Vérifie si les emails sont identiques (sans distinction de casse)
+//let askmail = prompt('Entrez votre email :'); // Boîte de dialogue
+//askmail = askmail.toUpperCase().trim();
+//let email = "ddd@gmail.com";
+//email = email.toUpperCase();
+//console.log(askmail == email); // Vérifie si les emails sont identiques (sans distinction de casse)
 
 //.toUpperCase()// to majuscule
 //.toLowerCase()// to minisci=ule
 // .trim(); //supp les espace de debut et fin et non au milieu
 
 
+///////////////////////////condition//////////////////////////////
+let num1=prompt('entrer le num 1');
+let num2=prompt('entrer le num 2');
+if(num1==num2){
+    console.log('hello');
+}
+
+let role=prompt('what is your role');
+if(role=='admin'){
+    console.log('create ,update, delete');
+}
+else if(role=='user'){console.log('hello user')}
+
+let age=prompt('what is your age');
+age>18?
+    document.write('hello user')
+    :age==18?
+     doucument.write('you are 18 ,hello')
+     :age<18
+     document.write('you are very young');
+
+let result= age>18? 'hello user': age<18? 'you are very young': 'you are 18,hello ';
+document.write(result);
+
+/////// les fonctions ///////
+function produit (prix,taxe, ads){
+    let product= prix*taxe;
+    let result= product*ads;
+    console.log('result :', result);
+}
+produit(2,2,2)
+produit(1,2,2)
+produit(3 ,2,2)
 
