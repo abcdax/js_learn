@@ -229,3 +229,65 @@ console.log(car.isExpensive());
  ///////key words/////
  ///////Create object/////
  ///////Assign Object /////
+
+
+
+
+
+ //////////////////////////condition//////////////////////////////
+let num1=prompt('entrer le num 1');
+let num2=prompt('entrer le num 2');
+if(num1==num2){
+    console.log('hello');
+}
+
+let role=prompt('what is your role');
+if(role=='admin'){
+    console.log('create ,update, delete');
+}
+else if(role=='user'){console.log('hello user')}
+
+let age=prompt('what is your age');
+age>18?
+    document.write('hello user')
+    :age==18?
+     doucument.write('you are 18 ,hello')
+     :age<18
+     document.write('you are very young');
+
+let result= age>18? 'hello user': age<18? 'you are very young': 'you are 18,hello ';
+document.write(result);
+
+
+///////////////////////////les fonctions/////////////////////////////
+
+function produit (prix,taxe, ads){
+    let product= prix*taxe;
+    let result= product*ads;    
+    console.log('result :', result);
+}         
+produit(2,2,2)
+produit(1,2,2)
+produit(3 ,2,2)
+
+
+ ///////argumrt/////
+ function calc(...numbers){
+    let result=0
+    for(let i=0;i<numbers.length;i++){
+        result+=numbers[i];
+    }
+    console.log(result);
+ }
+
+calc(2,3,4,1);
+ ///////fonction fait appel alui meme/////
+(function(){console.log('hello !!!!!')})();
+
+ ///////ARROW FUNCTION/////
+ let u=()=> 'arrow function1'; 
+ console.log(u());
+
+
+let h = _ =>'arrow function 2 without parameter'// arrow function without parameter 
+console.log(h());
